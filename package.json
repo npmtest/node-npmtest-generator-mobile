@@ -1,1 +1,39 @@
-{     "devDependencies": {         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-generator-mobile",     "homepage": "https://github.com/npmtest/node-npmtest-generator-mobile",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-generator-mobile.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### basic test coverage for  [generator-mobile (v2.0.0-alpha)](https://github.com/yeoman/generator-mobile)  [![npm package](https://img.shields.io/npm/v/npmtest-generator-mobile.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-generator-mobile) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-generator-mobile.svg)](https://travis-ci.org/npmtest/node-npmtest-generator-mobile)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-generator-mobile",
+    "keywords": [
+        "coverage",
+        "test",
+        "generator-mobile"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_generator_mobile.js",
+    "name": "npmtest-generator-mobile",
+    "nameAlias": "npmtest_generator_mobile",
+    "nameOriginal": "npmtest-generator-mobile",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-generator-mobile.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
