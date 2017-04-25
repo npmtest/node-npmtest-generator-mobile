@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-generator-mobile/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-generator-mobile/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-generator-mobile/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-generator-mobile/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-generator-mobile/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-generator-mobile/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-generator-mobile/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-generator-mobile/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-generator-mobile/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-generator-mobile/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-generator-mobile/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-generator-mobile/build/coverage.html/index.html)
 
@@ -35,24 +35,38 @@
 ```json
 
 {
-    "name": "generator-mobile",
-    "version": "2.0.0-alpha",
+    "author": {
+        "name": "Chrome Developer Relations"
+    },
+    "bugs": {
+        "url": "https://github.com/yeoman/generator-mobile/issues"
+    },
+    "dependencies": {
+        "chalk": "^0.5.0",
+        "download": "^3.1.1",
+        "iniparser": "^1.0.5",
+        "request": "^2.46.0",
+        "yeoman-generator": "^0.17.0",
+        "yosay": "^0.3.0"
+    },
     "description": "Yeoman generator for mobile based on Web Starter Kit",
-    "homepage": "https://github.com/yeoman/generator-mobile",
-    "bugs": "https://github.com/yeoman/generator-mobile/issues",
-    "license": "BSD",
-    "main": "app/index.js",
-    "repository": "yeoman/generator-mobile",
-    "author": "Chrome Developer Relations",
+    "devDependencies": {
+        "mocha": "*",
+        "nock": "^0.48.2"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "8f6f06b5787e43e14f81a0728927ce1bad8a1a2d",
+        "tarball": "https://registry.npmjs.org/generator-mobile/-/generator-mobile-2.0.0-alpha.tgz"
+    },
     "engines": {
         "node": ">=0.10.0"
-    },
-    "scripts": {
-        "test": "mocha"
     },
     "files": [
         "app"
     ],
+    "gitHead": "b3c5106a8fec407b7f779f2b84c1159a0c8b2d3c",
+    "homepage": "https://github.com/yeoman/generator-mobile",
     "keywords": [
         "yeoman-generator",
         "web",
@@ -62,21 +76,45 @@
         "wsk",
         "web-starter-kit"
     ],
-    "dependencies": {
-        "yeoman-generator": "^0.17.0",
-        "chalk": "^0.5.0",
-        "yosay": "^0.3.0",
-        "download": "^3.1.1",
-        "request": "^2.46.0",
-        "iniparser": "^1.0.5"
-    },
-    "devDependencies": {
-        "mocha": "*",
-        "nock": "^0.48.2"
-    },
+    "license": "BSD",
+    "main": "app/index.js",
+    "maintainers": [
+        {
+            "name": "gauntface"
+        },
+        {
+            "name": "addyosmani"
+        },
+        {
+            "name": "sindresorhus"
+        },
+        {
+            "name": "sboudrias"
+        },
+        {
+            "name": "eddiemonge"
+        },
+        {
+            "name": "passy"
+        },
+        {
+            "name": "crhym3"
+        }
+    ],
+    "name": "generator-mobile",
+    "optionalDependencies": {},
     "peerDependencies": {
         "yo": ">=1.0.0"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yeoman/generator-mobile.git"
+    },
+    "scripts": {
+        "test": "mocha"
+    },
+    "version": "2.0.0-alpha",
+    "bin": {}
 }
 ```
 

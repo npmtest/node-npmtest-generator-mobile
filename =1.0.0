@@ -31,7 +31,7 @@ npmtest-generator-mobile@0.0.1 /home/travis/build/npmtest/node-npmtest-generator
   │ ├── object-assign@4.1.1 
   │ ├── osenv@0.1.4 
   │ ├── uuid@2.0.3 
-  │ ├─┬ write-file-atomic@1.3.2 
+  │ ├─┬ write-file-atomic@1.3.3 
   │ │ ├── imurmurhash@0.1.4 
   │ │ └── slide@1.1.6 
   │ └── xdg-basedir@2.0.0 
@@ -112,7 +112,7 @@ npmtest-generator-mobile@0.0.1 /home/travis/build/npmtest/node-npmtest-generator
   │ │ ├── object-assign@4.1.1 
   │ │ ├── read-all-stream@3.1.0 
   │ │ └── timed-out@3.1.3 
-  │ └─┬ registry-auth-token@3.2.0 
+  │ └─┬ registry-auth-token@3.3.0 
   │   └─┬ rc@1.2.1 
   │     ├── deep-extend@0.4.1 
   │     └── strip-json-comments@2.0.1 
